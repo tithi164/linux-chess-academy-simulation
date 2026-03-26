@@ -14,13 +14,13 @@ The project demonstrates practical usage of:
 * Signal handling
 * File operations
 
----
+
 
 ## Objective
 
 To design a simulation-based system that integrates Linux system calls and IPC mechanisms in a realistic and structured manner, demonstrating concurrency, coordination, and system-level programming.
 
----
+
 
 ## System Description
 
@@ -34,7 +34,7 @@ The system simulates:
 
 The system is **event-driven**, controlled via signals.
 
----
+
 
 ## Key Features
 
@@ -51,13 +51,13 @@ The system is **event-driven**, controlled via signals.
 * Periodic puzzle evaluation
 * Leaderboard tracking player performance
 
----
+
 
 ## Architecture
 
 ![Architecture Diagram](architecture.png)
 
----
+
 
 ## Workflow
 
@@ -83,7 +83,7 @@ The system is **event-driven**, controlled via signals.
 
    * Periodically updates puzzle performance
 
----
+
 
 ## Signals Used
 
@@ -94,7 +94,7 @@ The system is **event-driven**, controlled via signals.
 | SIGTERM | Display leaderboard   |
 | SIGINT  | Stop system           |
 
----
+
 
 ## IPC Mechanisms Used
 
@@ -105,7 +105,7 @@ The system is **event-driven**, controlled via signals.
 | Shared Memory | Stores leaderboard data           |
 | Semaphore     | Synchronizes shared data access   |
 
----
+
 
 ## Threads & Synchronization
 
@@ -115,7 +115,7 @@ The system is **event-driven**, controlled via signals.
   * processes
   * threads
 
----
+
 
 ## File Handling
 
@@ -132,7 +132,7 @@ System calls used:
 * `lseek()`
 * `close()`
 
----
+
 
 ## Leaderboard Metrics
 
@@ -143,7 +143,7 @@ Each player has:
 * Puzzles Correct
 * Puzzles Wrong
 
----
+
 
 ## How to Run
 
@@ -159,7 +159,7 @@ make
 make run
 ```
 
----
+
 
 ## Control via Signals (Use another terminal)
 
@@ -193,7 +193,7 @@ kill -SIGTERM <pid>
 kill -SIGINT <pid>
 ```
 
----
+
 
 ## Sample Output
 
@@ -211,7 +211,7 @@ Puzzle session done
 Player 4 -> Played:1 Won:1 Correct:3 Wrong:2
 ```
 
----
+
 
 ## Challenges Faced
 
@@ -220,13 +220,13 @@ Player 4 -> Played:1 Won:1 Correct:3 Wrong:2
 * Designing signal-driven control flow
 * Ensuring clean process termination
 
----
+
 
 ## Conclusion
 
 This project demonstrates a comprehensive implementation of Linux system programming concepts through a realistic simulation. It integrates multiple IPC mechanisms, process control, threading, and signal handling into a cohesive system.
 
----
+
 
 ## Future Scope
 
