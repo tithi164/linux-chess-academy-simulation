@@ -55,26 +55,7 @@ The system is **event-driven**, controlled via signals.
 
 ## 🏗️ Architecture
 
-```
-                +------------------+
-                |   Controller     |
-                |  (Main Process)  |
-                +--------+---------+
-                         |
-        -----------------|-----------------
-        |                |                |
-   Pipe |           Message Queue        |
-        |                |                |
-+-------v-----+    +-----v------+    +----v------+
-| Match Proc  |    |  Logger    |    | Shared    |
-| (Multiple)  |    | Process    |    | Memory    |
-+-------------+    +------------+    +-----------+
-
-                +------------------+
-                | Puzzle Thread    |
-                | (Periodic Task)  |
-                +------------------+
-```
+![Architecture Diagram](architecture.png)
 
 ---
 
