@@ -1,6 +1,6 @@
 # Linux Chess Academy Simulation (System Calls & IPC Project)
 
-## 📌 Overview
+## Overview
 
 This project implements a **multi-process, multi-threaded simulation system** using Linux system calls and POSIX APIs.
 
@@ -16,13 +16,13 @@ The project demonstrates practical usage of:
 
 ---
 
-## 🎯 Objective
+## Objective
 
 To design a simulation-based system that integrates Linux system calls and IPC mechanisms in a realistic and structured manner, demonstrating concurrency, coordination, and system-level programming.
 
 ---
 
-## 🧠 System Description
+## System Description
 
 The system simulates:
 
@@ -36,7 +36,7 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## ⚙️ Key Features
+## Key Features
 
 * Multi-process architecture using `fork()` and `execv()`
 * Multi-threading using POSIX threads (`pthread`)
@@ -53,13 +53,13 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## 🏗️ Architecture
+## Architecture
 
 ![Architecture Diagram](architecture.png)
 
 ---
 
-## 🔁 Workflow
+## Workflow
 
 1. System starts in idle mode
 2. Signals control execution:
@@ -85,7 +85,7 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## 📡 Signals Used
+## Signals Used
 
 | Signal  | Function              |
 | ------- | --------------------- |
@@ -96,7 +96,7 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## 🔗 IPC Mechanisms Used
+## IPC Mechanisms Used
 
 | Mechanism     | Purpose                           |
 | ------------- | --------------------------------- |
@@ -107,7 +107,7 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## 🧵 Threads & Synchronization
+## Threads & Synchronization
 
 * `pthread` used for puzzle session execution
 * Semaphore used to prevent race conditions between:
@@ -117,7 +117,7 @@ The system is **event-driven**, controlled via signals.
 
 ---
 
-## 📁 File Handling
+## File Handling
 
 | File          | Purpose                        |
 | ------------- | ------------------------------ |
@@ -134,7 +134,7 @@ System calls used:
 
 ---
 
-## 📊 Leaderboard Metrics
+## Leaderboard Metrics
 
 Each player has:
 
@@ -145,7 +145,7 @@ Each player has:
 
 ---
 
-## ▶️ How to Run
+## How to Run
 
 ### 1. Compile
 
@@ -161,7 +161,7 @@ make run
 
 ---
 
-## 🖥️ Control via Signals (Use another terminal)
+## Control via Signals (Use another terminal)
 
 ### Get PID:
 
@@ -195,7 +195,7 @@ kill -SIGINT <pid>
 
 ---
 
-## 🧪 Sample Output
+## Sample Output
 
 ```
 Match 123 started (3 sec)
@@ -213,7 +213,7 @@ Player 4 -> Played:1 Won:1 Correct:3 Wrong:2
 
 ---
 
-## ⚠️ Challenges Faced
+## Challenges Faced
 
 * Managing synchronization between processes and threads
 * Handling concurrent output and buffering issues
@@ -222,13 +222,13 @@ Player 4 -> Played:1 Won:1 Correct:3 Wrong:2
 
 ---
 
-## 🚀 Conclusion
+## Conclusion
 
 This project demonstrates a comprehensive implementation of Linux system programming concepts through a realistic simulation. It integrates multiple IPC mechanisms, process control, threading, and signal handling into a cohesive system.
 
 ---
 
-## 🔮 Future Scope
+## Future Scope
 
 * Add GUI for visualization
 * Extend to network-based distributed system
